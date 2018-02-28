@@ -1,0 +1,229 @@
+object Form1: TForm1
+  Left = 238
+  Height = 547
+  Top = 145
+  Width = 766
+  Caption = 'Form1'
+  ClientHeight = 547
+  ClientWidth = 766
+  Color = clMenuHighlight
+  OnCreate = FormCreate
+  LCLVersion = '1.0.12.0'
+  object GroupBox_MainMenu: TGroupBox
+    Left = 16
+    Height = 353
+    Top = 32
+    Width = 272
+    Caption = 'MAIN MENU'
+    ClientHeight = 335
+    ClientWidth = 268
+    Color = clMenuHighlight
+    ParentColor = False
+    TabOrder = 0
+    object Button_next1: TButton
+      Left = 22
+      Height = 25
+      Top = 224
+      Width = 75
+      Caption = 'NEXT'
+      OnClick = Button_next1Click
+      TabOrder = 0
+    end
+    object Button_next2: TButton
+      Left = 142
+      Height = 25
+      Top = 224
+      Width = 75
+      Caption = 'NEXT'
+      OnClick = Button_next2Click
+      TabOrder = 1
+    end
+    object Label_meja1: TLabel
+      Left = 14
+      Height = 24
+      Top = 104
+      Width = 90
+      AutoSize = False
+      Caption = 'LOKET 1'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -24
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsItalic]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label_meja2: TLabel
+      Left = 142
+      Height = 24
+      Top = 104
+      Width = 96
+      AutoSize = False
+      Caption = 'LOKET 2'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -24
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsItalic]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label_antrian1: TLabel
+      Left = 6
+      Height = 42
+      Top = 146
+      Width = 95
+      Alignment = taCenter
+      AutoSize = False
+      Caption = '-'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -27
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label_antrian2: TLabel
+      Left = 150
+      Height = 42
+      Top = 146
+      Width = 95
+      Alignment = taCenter
+      AutoSize = False
+      Caption = '-'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -27
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object GroupBox_Antrian: TGroupBox
+    Left = 16
+    Height = 120
+    Top = 416
+    Width = 272
+    Caption = 'MENU ANTRIAN'
+    ClientHeight = 102
+    ClientWidth = 268
+    Color = clMenuHighlight
+    ParentColor = False
+    TabOrder = 1
+    object Button_personal: TButton
+      Left = 22
+      Height = 23
+      Top = 55
+      Width = 72
+      Caption = 'PERSONAL'
+      OnClick = Button_personalClick
+      TabOrder = 0
+    end
+    object Label_antrian: TLabel
+      Left = 70
+      Height = 16
+      Top = 24
+      Width = 88
+      AutoSize = False
+      Caption = 'TIPE ANTRIAN'
+      ParentColor = False
+    end
+    object Button_bisnis: TButton
+      Left = 133
+      Height = 23
+      Top = 55
+      Width = 72
+      Caption = 'BISNIS'
+      OnClick = Button_bisnisClick
+      TabOrder = 1
+    end
+  end
+  object GroupBox_DAntrian: TGroupBox
+    Left = 408
+    Height = 504
+    Top = 32
+    Width = 328
+    Caption = 'DAFTAR ANTRIAN'
+    ClientHeight = 486
+    ClientWidth = 324
+    Color = clMenuHighlight
+    ParentColor = False
+    TabOrder = 2
+    object ListBox_DAntrian: TListBox
+      Left = 25
+      Height = 416
+      Top = 32
+      Width = 277
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -27
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsItalic]
+      ItemHeight = 0
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label_DAntrian: TLabel
+      Left = 30
+      Height = 16
+      Top = 8
+      Width = 104
+      Caption = 'JUMLAH ANTRIAN:'
+      ParentColor = False
+    end
+    object Label_jumlah: TLabel
+      Left = 142
+      Height = 16
+      Top = 8
+      Width = 24
+      Alignment = taCenter
+      AutoSize = False
+      Caption = '-'
+      Color = clMenuHighlight
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -21
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+    end
+    object Label_daftarAn: TLabel
+      Left = 25
+      Height = 23
+      Top = 448
+      Width = 277
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'List Daftar Antrian'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -24
+      Font.Name = 'Times New Roman'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Button_keluar: TButton
+    Left = 303
+    Height = 29
+    Top = 110
+    Width = 89
+    Caption = 'KELUAR'
+    OnClick = Button_keluarClick
+    TabOrder = 3
+  end
+end
